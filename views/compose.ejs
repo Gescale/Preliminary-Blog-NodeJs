@@ -1,0 +1,19 @@
+<%- include("Partials/header") -%>
+
+<h1> <%= heading1 %> </h1>
+
+<div>
+  <form class="form-group" action="/compose" method="post">
+      <div class="">
+        <label for="composeTitle">Title</label>
+        <input class="form-control" type="text" name="composeTitle" size="158" placeholder="Place your title here...">
+        <br>
+        <label for="composeBody">Content</label>
+        <textarea class="form-control" rows="8" type="text" name="composeBody" placeholder="Place your Content here..."></textarea>
+        <br>
+          <button class="btn btn-danger" type="submit">Publish</button>
+      </div>
+  </form>
+</div>
+
+<%- include("Partials/footer") -%>
